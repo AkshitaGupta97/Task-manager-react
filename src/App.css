@@ -116,3 +116,7 @@ button {
   justify-content: center;
   gap: 10px;
 }
+.task-completed {
+  text-decoration: line-through;
+  color: #a9a9a9;
+}

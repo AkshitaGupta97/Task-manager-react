@@ -6,8 +6,8 @@ function TaskList() {
     // useSelector to get tasks from the Redux store
     const {items, filters} = useSelector(state => state.task) // useSelector(state => state.task) to access the task slice of the state in the Redux store
     
-    const filtered = filters === 'completed' ? 
-        items.filer(task => task.completed) : items;
+    const filtered = (filters === 'completed') ? 
+        items.filter(task => task.completed) : items;
 
 
     console.log("items in tasklist",items);
@@ -15,8 +15,8 @@ function TaskList() {
     <ul className="task-list">
 
         {
-            filtered && items.length > 0 ? 
-            items.map(task => (
+            filtered && filtered.length > 0 ? 
+            filtered.map(task => (
                 <TaskItem key={task.id} task={task} />
             )) : 
             (
