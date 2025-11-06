@@ -3,17 +3,49 @@
   margin: 0 auto;
   padding: 20px;
   font-family: Arial, sans-serif;
+  border: 2px solid #858383;
+  border-radius: 8px;
+  background-color: #3e3d3d;
 }
 
 h1 {
   text-align: center;
-  color: #333;
+  color: white;
 }
-
+input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+input:focus {
+  outline: none;
+  border-color: #15acec;
+  box-shadow: 0 0 5px rgba(21, 172, 236, 0.5);
+}
+input::placeholder {
+  color: #999;
+  font-style: italic;
+  font-weight: 600;
+}
 button {
   color: white;
   padding: 10px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.add-task-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.add-btn {
+  background-color: #15acec;
+}
+.add-btn:hover {
+  background-color: #0d8bd1;
 }
