@@ -9,7 +9,7 @@ function TaskItem({task}) {
             <h3>{task.text}</h3>
             <div className="task-item-btn">
                 <button className="done-btn" onClick={() => dispatch(toggleTask(task.id))}>{task.completed ? 'Undo' : 'Done'}</button>
-                <button className="delete-btn" onClick={dispatch(deleteTask(task.id))}>Delete</button>
+                <button className="delete-btn" onClick={() => dispatch(deleteTask(task.id))}>Delete</button>
             </div>
         </div>
     </li>
