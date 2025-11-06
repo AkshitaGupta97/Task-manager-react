@@ -12,6 +12,10 @@ h1 {
   text-align: center;
   color: white;
 }
+h3 {
+  color: white;
+  margin-bottom: 10px;
+}
 input {
   padding: 10px;
   margin-bottom: 10px;
@@ -48,4 +52,67 @@ button {
 }
 .add-btn:hover {
   background-color: #0d8bd1;
+}
+.done-btn {
+  background-color: #15aa38;
+}
+.delete-btn {
+  background-color: #c12020;
+}
+.done-btn:hover {
+  background-color: #0f7d2a;
+}
+.delete-btn:hover {
+  background-color: #a31616;
+}
+.no-task {
+  text-align: center;
+  color: #e2d1d1;
+  font-style: italic;
+  margin-top: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.task-list {
+  list-style-type: none;
+  padding: 0;
+}
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  border-bottom: 1px solid #ccc;
+}
+.task-item-btn {
+  display: flex;
+  gap: 10px;
+}
+.task-item:nth-child(odd) {
+  background-color: #585757;
+}
+
+.all-btn {
+  background-color: #3fc9e8;
+}
+.all-btn:hover {
+  background-color: #2bb5d1;
+}
+.complete-btn {
+  background-color: #df9920;
+}
+.complete-btn:hover {
+  background-color: #c57f16;
+}
+.all-btn:active {
+  background-color: #2916b6;
+}
+.complete-btn:active {
+  background-color: #2916b6;  
+}
+.filter {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }

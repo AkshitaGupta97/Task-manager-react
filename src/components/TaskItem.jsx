@@ -2,11 +2,11 @@
 function TaskItem({task}) {
   return (
     <li>
-        <div>
+        <div className="task-item">
             <h3>{task.text}</h3>
-            <div>
-                <button>Done</button>
-                <button>Delete</button>
+            <div className="task-item-btn">
+                <button className="done-btn">Done</button>
+                <button className="delete-btn">Delete</button>
             </div>
         </div>
     </li>

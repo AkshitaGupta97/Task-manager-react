@@ -16,7 +16,7 @@ const taskSlice = createSlice({
     // state can be mutated directly in Redux Toolkit because it uses Immer library under the hood
     // action contains a type and a payload
 
-    
+
     reducers: {
         addTask: {
             reducer: (state, action) => {
@@ -40,7 +40,7 @@ const taskSlice = createSlice({
             }
         },
         deleteTask: (state, action) => {
-            state.items = state.items.filters(itm => itm.id !== action.payload);
+            state.items = state.items.filter(itm => itm.id !== action.payload);
         },
         setFilter: (state, action) => {
             state.filters = action.payload;
