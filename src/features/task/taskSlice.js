@@ -8,6 +8,7 @@ const taskSlice = createSlice({
         filters: 'all',
     },
     
+    // name is the prefix for generated action types
     // reducers is an object that contains methods to handle different actions
     // reducers take the current state and an action as arguments
     // nanoid is used to generate unique IDs for tasks
